@@ -12,8 +12,8 @@ def parse_args():
     parser.add_argument('--dataset', type=str, default='PaintingsOfTurner', help='[mnist / cifar10 / custom_dataset]') # PaintingsOfTurner, folder name under dataset
 
     parser.add_argument('--epoch', type=int, default=20000, help='The number of epochs to run') # here is epochs,
-    parser.add_argument('--iteration', type=int, default=100, help='The number of training iterations') # if you dataset is small to put large number like 10,000
-    parser.add_argument('--batch_size', type=int, default=4, help='The size of batch per gpu') # if dataset is small, put small number, if 350 images put 1
+    parser.add_argument('--iteration', type=int, default=10, help='The number of training iterations') # if you dataset is small to put large number like 10,000
+    parser.add_argument('--batch_size', type=int, default=2, help='The size of batch per gpu') # if dataset is small, put small number, if 350 images put 1
     parser.add_argument('--ch', type=int, default=96, help='base channel number per layer')
 
     # SAGAN
